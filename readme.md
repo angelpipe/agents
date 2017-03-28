@@ -5,6 +5,8 @@
 This app was made using Laravel, it means its layers adhere to Laravel's 
 standards.
 
+The development process can be seen in this repo commit history.
+
 ## Requirements
 
 * PHP >= 5.6.4
@@ -17,7 +19,7 @@ standards.
 
 ### Local
 
-    ```php artisan serve```
+    php artisan serve
 
     Then visit http://127.0.0.1:8000
 
