@@ -14,7 +14,8 @@
     your environments are the same and is more lightweight than vagrant/vbox.
     Currently, all services run in the same container (A Docker copy of
     homestead is used), but in a real world scenario they could be
-    separated to make them more modular.
+    separated to make them more modular. The boilerplate is used for
+    security reasons too, as the app will be exposed to internet.
     
     MySQL was chosen as the DB engine. It is because our Docker boilerplate
     lets us to implement it easily and MySQL is a robust and production used
@@ -26,6 +27,10 @@
     were chosen because they're faster to implement and as we will operate
     with the data, Laravel models will be really helpful. For agents, as
     they're introduced by user (and only zip code) a model was not created.
+    
+    Front end for this app is really, really basic. No css/js
+    minification/compilation as the idea was to share it. Bootstrap was
+    chosen to give some styles and basic grid responsive system.
 
 + ## Requirements
 
