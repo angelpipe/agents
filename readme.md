@@ -28,6 +28,12 @@
     with the data, Laravel models will be really helpful. For agents, as
     they're introduced by user (and only zip code) a model was not created.
     
+    Two routes are used to make the root url (/) respond to two HTTP methods:
+    GET and POST.
+        
+    About controllers, the default controller was kept and used. App is
+    really simple and there's no need for a new or different controller.
+    
     Front end for this app is really, really basic. No css/js
     minification/compilation as the idea was to share it. Bootstrap was
     chosen to give some styles and basic grid responsive system.
