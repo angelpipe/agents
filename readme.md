@@ -1,28 +1,40 @@
 # ZIP Agents
 
-## Architecture
++ ## Architecture
 
-This app was made using Laravel, it means its layers adhere to Laravel's 
-standards.
+    This app was made using Laravel, it means its layers adhere to Laravel's 
+    standards.
 
-The development process can be seen in this repo commit history.
+    The development process can be seen in this repo commit history.
 
-## Requirements
+    The first architectural decision was to add a Docker boilerplate to the 
+    project. The motivation behind this is the necessity of running it in 
+    different environments (AWS and Local). Docker is really easy to spin up
+    so you can have a near production environment really fast. It assures
+    your environments are the same and is more lightweight than vagrant/vbox.
 
-* PHP >= 5.6.4
++ ## Requirements
 
-## How to run
+	* Docker (Latest available version)
 
-### Online
++ ## How to run
 
-    Available at 
+	### Online
 
-### Local
+	Available at 
 
-    php artisan serve
+	### Local
+    	
+    Go to project folder in terminal and type:
 
-    Then visit http://127.0.0.1:8000
+    	make run
 
-## Github project
+    Then visit http://127.0.0.1
+    
+    To stop the server type:
+    
+    	make stop
 
-https://github.com/angelpipe/agents
++ ## Github project
+
+	https://github.com/angelpipe/agents
