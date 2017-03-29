@@ -4,6 +4,7 @@ services:
     image: laraedit/laraedit
     ports:
       - 80:80
+      - 3306:3306
     volumes:
       - ../:/var/www/html/app
 
