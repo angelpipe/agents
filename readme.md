@@ -63,12 +63,14 @@
 
 	* Docker (Latest available version)
 	* PHP >= 5.6.4
+	* Composer
+	* Make
 
 + ## How to run
 
 	### Online
 
-	Available at 
+	Available at http://52.207.232.143/
 
 	### Local
     	
@@ -76,6 +78,7 @@
     	
     Go to project folder in terminal and type:
 
+    	composer install
     	make run
     	php artisan migrate --seed
 
