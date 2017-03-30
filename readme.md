@@ -34,9 +34,30 @@
     About controllers, the default controller was kept and used. App is
     really simple and there's no need for a new or different controller.
     
+    For ZIP code distances a collection of services to query google APIs
+    for Laravel is used (https://alexpechkarev.github.io/google-maps/).
+    The decision was done because Google's database is Huge and it assures
+    compatibility with almost any ZIP code. Additionally, Google's data is
+    reliable and its free tier has higher limits than other services. Other
+    reasons to not use a local database is they're sold at high prices and
+    that kind of solution would require more development that is out of the
+    scope. Of course, the chosen solution is not fast (nearly 80 requests
+    are made with the current contact list). The solution for that is to
+    buy a database or find a way to batch process the queries to the
+    service so they're reduced. Some ZIP codes in the contact list look
+    to be wrong, codes that not match won't be included in the final
+    result.
+    
+    One class is custom created (ZipMatcher). A service provider was created
+    for it to handle dependency injection. Agent's ZIP codes are attributes
+    of the class as we have a fixed quantity of them and they come from
+    user input. Of course, it works for this specific case; if this would be
+    part of a bigger app, the architecture could be different.
+    
     Front end for this app is really, really basic. No css/js
     minification/compilation as the idea was to share it. Bootstrap was
-    chosen to give some styles and basic grid responsive system.
+    chosen to give some styles and basic grid responsive system. The HTML
+    is basic and compliant.
 
 + ## Requirements
 
