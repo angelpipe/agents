@@ -1,6 +1,6 @@
 run start:
-	docker-compose -f docker/docker-compose.yml up --remove-orphans -d
+	sudo docker-compose -f docker/docker-compose.yml up --remove-orphans -d
 
 stop:
-	docker-compose -f docker/docker-compose.yml down
+	sudo docker-compose -f docker/docker-compose.yml down
 
